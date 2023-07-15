@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu } from "../Subcomponents/Menu";
+import { Tables } from "../Subcomponents/Tables";
 
 export const Main: React.FC = () => {
 
@@ -38,8 +39,8 @@ export const Main: React.FC = () => {
 
 
   return (
-    <div className=" bg-violet-400  h-full grid grid-cols-8 grid-rows-6 gap-2 p-3 ">
-        <div className="col-start-2 col-end-8 row-start-1 row-end-7 h-full w-full rounded-lg my-2  " >
+    <div className=" bg-violet-400  h-full grid grid-cols-8 grid-rows-6 gap-2  ">
+        <div className="col-start-2 col-end-8 row-start-1 row-end-7 h-full w-full rounded-lg   " >
           <div className="mt-3 text-black  flex justify-around px-3 font-mono font-bold bg-white rounded-lg my-2 border border-primary">
 
 
@@ -65,6 +66,9 @@ export const Main: React.FC = () => {
         }`}
         onClick={handleFourthButtonClick}>{isSelectedFourth? " ⚪ Crypto":" Crypto"}</button>
           </div>  
+        </div>
+        <div className="col-start-2 col-end-8 row-start-2 row-end-6  rounded-lg -mt-12 bg-white   ">
+         <Tables isSelectedFirst={isSelectedFirst} />
         </div>
       <div className="col-start-2  col-end-8 row-start-6 row-end-6 w-full  ">
         <Menu/>

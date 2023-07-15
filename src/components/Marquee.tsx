@@ -36,10 +36,6 @@ export const Marquee: React.FC = () => {
     });
 
     document.getElementsByClassName('tradingview-widget-container__widget')[0].appendChild(script);
-
-    return () => {
-      document.getElementsByClassName('tradingview-widget-container__widget')[0].innerHTML = '';
-    };
   }, []);
 
   return (
