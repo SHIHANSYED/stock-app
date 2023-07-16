@@ -1,6 +1,6 @@
-import { Main } from "../components/Main"
-import { Marquee } from "../components/Marquee"
-import { NavBar } from "../components/NavBar"
+import { Main } from "../components/Main";
+import { Marquee } from "../components/Marquee";
+import { NavBar } from "../components/NavBar";
 
 export const Home = () => {
   return (

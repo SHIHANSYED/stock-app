@@ -1,9 +1,9 @@
-import { AiOutlineHome} from "react-icons/ai";
+import { AiOutlineHome } from "react-icons/ai";
 import { HiSwitchVertical } from "react-icons/hi";
 import { BsBagCheck } from "react-icons/bs";
 import { RiPieChartLine } from "react-icons/ri";
 import { LiaToolsSolid, LiaNewspaperSolid } from "react-icons/lia";
-export const Menu: React.FC = ()=> {
+export const Menu: React.FC = () => {
   return (
     <ul className="menu bg-white menu-horizontal rounded-box text-black p-3 flex justify-around gap-8  outline font-bold ">
       <li>
@@ -42,7 +42,7 @@ export const Menu: React.FC = ()=> {
       </li>
       <li>
         <button className="hover:outline hover:bg-primary hover:text-white">
-      <AiOutlineHome/>
+          <AiOutlineHome />
           Profile
         </button>
       </li>
